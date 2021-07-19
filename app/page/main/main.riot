@@ -1,0 +1,32 @@
+<page-main>
+
+  <side-menu />
+
+  <div class="contents-main">
+    <contents-main />
+  </div>
+
+  <script type="ts">
+    import SideMenu from '../../side-menu/side-menu.riot'
+    import ContentsMain from '../../contents/main/main.riot'
+
+    import {RiotComponentExport} from 'riot'
+
+    function Main(): RiotComponentExport<{}, {}> {
+      return {}
+    }
+
+    Main.components = {
+      SideMenu: SideMenu,
+      ContentsMain: ContentsMain
+    }
+    export default Main
+  </script>
+
+  <style>
+    .contents-main {
+      margin-left: 15rem;
+    }
+  </style>
+
+</page-main>

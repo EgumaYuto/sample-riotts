@@ -1,0 +1,52 @@
+<app>
+  <my-router>
+    <nav class="ui left fixed inverted vertical menu side-menu">
+      <div class="item">
+        <span class="dbflute-intro">DBFlute Intro</span>
+      </div>
+      <div class="item">
+        <div class="header">Execute</div>
+        <div class="menu">
+          <a class="item active" href="/#documents">Documents</a>
+          <a class="item" href="/#schema">Schema Policy Check</a>
+          <a class="item">Schema Sync Check</a>
+          <a class="item">Replace Schema</a>
+          <a class="item">Alter Check</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">General Settings</div>
+        <div class="menu">
+          <a class="item">Schema Policy Check</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">Files</div>
+        <div class="menu">
+          <a class="item">Logs</a>
+        </div>
+      </div>
+    </nav>
+
+    <my-route path="/">
+      Welcome to home
+    </my-route>
+    <my-route path="/#documents">
+      hello
+    </my-route>
+    <my-route path="/#schema/:person">
+      goodbye { route.params.person }
+    </my-route>
+  </my-router>
+
+  <style>
+    .dbflute-intro {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    my-route {
+        margin-left: 15rem;
+    }
+  </style>
+</app>
