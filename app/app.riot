@@ -8,7 +8,7 @@
         <div class="header">Execute</div>
         <div class="menu">
           <a class="item active" href="/#documents">Documents</a>
-          <a class="item" href="/#schema">Schema Policy Check</a>
+          <a class="item" href="/#schema-policy-check">Schema Policy Check</a>
           <a class="item">Schema Sync Check</a>
           <a class="item">Replace Schema</a>
           <a class="item">Alter Check</a>
@@ -28,25 +28,25 @@
       </div>
     </nav>
 
-    <my-route path="/">
-      Welcome to home
-    </my-route>
-    <my-route path="/#documents">
-      hello
-    </my-route>
-    <my-route path="/#schema/:person">
-      goodbye { route.params.person }
-    </my-route>
+    <main role="main" class="client">
+      <h1>DBFlute Client trohamadb</h1>
+      <my-route path="/#documents">
+        <documents />
+      </my-route>
+      <my-route path="/#schema-policy-check">
+        Welcome to home
+      </my-route>
+    </main>
   </my-router>
 
   <style>
-    .dbflute-intro {
-        font-weight: bold;
-        font-size: 1.5em;
-    }
+      .dbflute-intro {
+          font-weight: bold;
+          font-size: 1.5em;
+      }
 
-    my-route {
-        margin-left: 15rem;
-    }
+      .client {
+          margin-left: 17rem;
+      }
   </style>
 </app>

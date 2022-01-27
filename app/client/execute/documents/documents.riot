@@ -1,0 +1,21 @@
+<documents>
+  <h2>Documents</h2>
+
+  <p>
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </p>
+
+  <sub-documents />
+
+  <script type="ts">
+    import SubDocuments from './sub-documents.riot'
+    import {register, RiotComponentExport} from 'riot'
+
+    register('sub-documents', SubDocuments)
+
+    function Documents(): RiotComponentExport<{}, {}> {
+      return {}
+    }
+    export default Documents
+  </script>
+</documents>
