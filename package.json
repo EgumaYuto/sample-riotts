@@ -16,7 +16,7 @@
     "@babel/core": "7.6.0",
     "@babel/preset-env": "7.6.0",
     "@babel/preset-typescript": "^7.6.0",
-    "@riotjs/compiler": "^5.0.0",
+    "@riotjs/compiler": "^6.1.2",
     "@riotjs/hot-reload": "4.0.0",
     "@riotjs/webpack-loader": "^4.0.1",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
@@ -33,7 +33,7 @@
   "dependencies": {
     "@riotjs/route": "^8.0.0",
     "@types/riot-route": "^3.1.1",
-    "riot": "^5.0.0",
+    "riot": "^6.1.2",
     "semantic-ui-riot": "^2.2.4"
   }
 }
